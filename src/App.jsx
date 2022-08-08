@@ -9,12 +9,12 @@ export default function App() {
     phone: "",
     email: "",
     location: "",
-    about: ""
+    about: "",
+    experience: []
   });
 
-  function handleChange(event){
-    const {name, value} = event.target;
-
+  function handleChange(event, customName, customValue){
+    const {name, value} = customName ? {name: customName, value: customValue} : event.target;
     setData(oldData => {
       return {
         ...oldData,
