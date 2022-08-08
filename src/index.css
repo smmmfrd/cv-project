@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* INPUT */
+.cv--input{
+  padding: 0 1rem;
+}
+
+.cv--input > *{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* OUTPUT */
+.cv--preview{
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 1rem;
+}
