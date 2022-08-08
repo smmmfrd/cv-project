@@ -30,6 +30,7 @@ export default function WorkExperience(props){
                 onChange={(event) => props.handleInput(event, id)}
                 value={props.data.description}
             />
+            <button onClick={() => props.handleDelete(id)}>Delete</button>
         </div>
     )
 }

@@ -12,7 +12,7 @@ export default function Experience(props){
                 key={newKey}
                 id={newKey}
                 handleInput={handleChange}
-                
+                handleDelete={handleDelete}
                 data={exp}
             />
         )
@@ -28,6 +28,10 @@ export default function Experience(props){
             ...exp,
             [name]: value
         } : exp));
+    }
+
+    function handleDelete(id){
+        setExperience(oldExp => oldExp.filter(exp => exp.id != id));
     }
 
     function addExperience(){
