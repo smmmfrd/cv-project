@@ -1,10 +1,10 @@
 import PersonalDetails from "./PersonalDetails";
-import WorkExperience from "./WorkExperience";
+import Experience from "./Experience";
 export default function Input(props){
     return(
         <div className="cv--input-container">
             {/* <PersonalDetails handleChange={props.handleChange} data={props.data} /> */}
-            <WorkExperience handleChange={props.handleChange} exp={props.data.experience}/>
+            <Experience handleChange={props.handleChange} experience={props.data.experience}/>
         </div>
     )
 }

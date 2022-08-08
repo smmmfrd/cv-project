@@ -14,7 +14,7 @@
   padding: 0 1rem;
 }
 
-.cv--input > *{
+.cv--input > *, input, textarea{
   width: 100%;
   margin-top: 1rem;
   resize: none;
