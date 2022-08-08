@@ -35,20 +35,20 @@ export default function Work(props){
     }
 
     function addExperience(){
-        setExperience(oldExp => [{
+        setExperience(oldExp => [...oldExp, {
             id: nanoid(),
             company: "",
             position: "",
             length: "",
             description: ""
-        }, ...oldExp]);
+        }]);
     }
 
     return(
         <div className="cv--input">
             <h1>Work Experience</h1>
             {experienceInputs}
-            <button onClick={addExperience}>Add</button>
+            <button onClick={addExperience}>Add New Work Experience</button>
         </div>
     )
 }

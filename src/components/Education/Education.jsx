@@ -35,19 +35,19 @@ export default function Education(props){
     }
 
     function addEducation(){
-        setEducation(oldEdu => [{
+        setEducation(oldEdu => [...oldEdu, {
             id: nanoid(),
             course: "",
             school: "",
             length: ""
-        }, ...oldEdu]);
+        }]);
     }
 
     return(
         <div className="cv--input">
             <h1>Education</h1>
             {educationInputs}
-            <button onClick={addEducation}>Add</button>
+            <button onClick={addEducation}>Add New Education</button>
         </div>
     )
 }

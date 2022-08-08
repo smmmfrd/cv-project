@@ -33,9 +33,11 @@ export default function Input(props){
     return(
         <div className="cv--input-container">
             {renderSwitch()}
-            <button onClick={() => handleChange(-1)}>Previous Section</button>
-            <button onClick={() => handleChange(1)}>Next Section</button>
-            <p>{section}</p>
+            <div className="cv--input-buttons">
+                
+                <button onClick={() => handleChange(-1)}>Previous Section</button>
+                <button onClick={() => handleChange(1)}>Next Section</button>
+            </div>
         </div>
     )
 }

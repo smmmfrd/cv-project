@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 
@@ -20,10 +21,55 @@
   resize: none;
 }
 
+.cv--input-experience > button{
+  margin-top: 0.25rem;
+}
+
+.cv--input-buttons{
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* OUTPUT */
 .cv--preview{
   margin: 1rem;
   border: 1px solid black;
   border-radius: 2px;
   padding: 1rem;
+}
+
+.preview--header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.preview--header-name{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.preview--header-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cv--preview > hr{
+  margin: 1rem 0;
+}
+
+.preview-title{
+  margin-top: 1rem;
+  color: rgb(66, 84, 85);
+}
+
+.cv--preview-experience{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
