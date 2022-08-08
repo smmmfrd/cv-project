@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import { useState, useEffect } from "react";
 import WorkExperience from "./WorkExperience";
 
-export default function Experience(props){
+export default function Work(props){
     const [experience, setExperience] = useState(props.experience);
 
     const experienceInputs = experience.map(exp => {
@@ -46,6 +46,7 @@ export default function Experience(props){
 
     return(
         <div className="cv--input">
+            <h1>Work Experience</h1>
             {experienceInputs}
             <button onClick={addExperience}>Add</button>
         </div>

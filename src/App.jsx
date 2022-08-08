@@ -10,7 +10,8 @@ export default function App() {
     email: "",
     location: "",
     about: "",
-    experience: []
+    experience: [],
+    education: []
   });
 
   function handleChange(event, customName, customValue){
